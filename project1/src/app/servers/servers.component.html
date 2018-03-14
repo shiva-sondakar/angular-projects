@@ -1,7 +1,9 @@
 <button 
       class="btn btn-primary" 
-      [disabled]="!allowNewSever"> Add Server </button> <!-- normal bootstrap class-->
-<p [innerText]="allowNewSever">true</p>
+      [disabled]="!allowNewSever"
+      (click)="onCreateServer()"> Add Server </button> <!-- normal bootstrap class-->
+      <p>{{ serverCreationStatus }}</p>
+<!--<p [innerText]="allowNewSever">true</p>-->
 
 <app-server></app-server>
 <app-server></app-server>
